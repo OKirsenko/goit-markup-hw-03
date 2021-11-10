@@ -35,10 +35,10 @@ li {
   /* margin: 0 auto; */
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
 }
 /* buttons */
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
@@ -49,6 +49,7 @@ li {
   cursor: pointer;
 }
 .button-filter {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -82,40 +83,68 @@ li {
 
 /* Navigation */
 .header {
-  background-color: gray;
+  background-color: #fff;
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid var(--accent-color);
 }
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  margin-left: 93px;
 }
 .nav-item {
+  margin-right: 50px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.nav-item.active {
+
+.nav-link.active {
   color: var(--accent-color);
 }
-.nav-item:hover,
-.nav-item:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 .nav-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.nav-contacts:hover,
+.nav-contacts:focus {
+  color: var(--accent-color);
+}
+
+.nav-contacts:first-child {
+  margin-right: 50px;
 }
 /* Hero section */
 .hero {
   background-color: var(--accent-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-.hero-header {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -123,10 +152,30 @@ li {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-text-color);
+  max-width: 696px;
+  margin-bottom: 30px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-btn {
+  padding: 10px 32px;
 }
 
 /* features section */
 
+.hidden-title {
+  display: none;
+}
+.features {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.features-list {
+  display: flex;
+}
 .features-list h3 {
   font-weight: 700;
   font-size: 14px;
@@ -141,9 +190,18 @@ li {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
+.features-item {
+  margin-right: 30px;
+}
+.feature-subtitle {
+  margin-bottom: 10px;
+}
 /* Function section */
 
+.function {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
 .function-header {
   font-weight: 700;
   font-size: 36px;
@@ -151,11 +209,18 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.functions-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Team section */
 .team {
   background-color: var(--secondary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-header {
   font-weight: 700;
@@ -164,14 +229,24 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
-.team-list h3 {
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-list li {
+  background-color: #fff;
+}
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-list p {
   font-size: 16px;
@@ -179,24 +254,35 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 30px;
 }
 
 /* footer */
 .footer {
   background-color: var(--accent-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .address {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
   color: var(--hero-text-color);
+  margin-top: 20px;
 }
 .footer-contacts {
+  display: block;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.footer-contacts:last-child {
+  margin-bottom: 0;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
