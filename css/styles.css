@@ -7,6 +7,16 @@
   --secondary-bg-color: #f5f4fa;
   --accent-bg-color: #2f303a;
 }
+p,
+h1,
+h2,
+h3,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
@@ -18,7 +28,15 @@ a {
 li {
   list-style-type: none;
 }
-
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
 /* buttons */
 .button {
   font-size: 16px;
@@ -53,6 +71,7 @@ li {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
+  display: block;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -63,7 +82,17 @@ li {
 
 /* Navigation */
 .header {
-  background-color: #fff;
+  background-color: gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
 }
 .nav-item {
   font-weight: 500;
