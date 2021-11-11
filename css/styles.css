@@ -110,8 +110,8 @@ img {
 /* Navigation */
 .header {
   background-color: #fff;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -315,7 +315,7 @@ img {
 /* Portfilio page */
 /* Examples section */
 .filter-list {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
